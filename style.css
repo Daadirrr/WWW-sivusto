@@ -1,154 +1,105 @@
 /* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Perustyyli ja typografia */
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
-  line-height: 1.6;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #fff; /* Change to white */
+    color: #000; /* Change to black */
+    line-height: 1.6;
 }
 
 /* Navigaatio */
 header {
-  background-color: #222;
-  padding: 10px 0;
+    background-color: #222;
+    padding: 10px 0;
 }
 
 nav ul {
-  list-style: none;
-  text-align: center;
+    list-style: none;
+    text-align: center;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-  color: #f1c40f; /* Kullanvärinen korostus */
+    color: #f1c40f; /* Kullanvärinen korostus */
 }
 
 /* Pääsisältö */
 main {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #f1c40f; /* Kullanvärinen otsikkoväri */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Kullanvärinen otsikkoväri */
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin: 20px 0;
-  color: #f1c40f;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #f1c40f;
 }
 
 /* Kuvien käsittely */
 img {
-  max-width: 100%;
-  height: auto;
-  border: none;
+    max-width: 100%;
+    height: auto;
+    border: none;
 }
 
 .main-image {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .team-image {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 /* Tuote-esittely */
 .product-item {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .product-item p {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 /* CTA-painikkeet */
 a.cta, button.cta {
-  background-color: #f1c40f;
-  color: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
+    background-color: #f1c40f;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 a.cta:hover, button.cta:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 /* Yhteydenottolomake */
 .contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.contact-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #444;
-  background-color: #222;
-  color: #fff;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #f1c40f;
-}
-
-/* Sosiaalinen media */
-.social {
-  margin-top: 20px;
-}
-
-/* Sivun alareuna */
-footer {
-  background-color: #222;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;
-}
-
-/* Responsiivisuus */
-@media (max-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
+    max-width: 500px;
+    margin:
 }
