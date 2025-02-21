@@ -5,101 +5,79 @@
     box-sizing: border-box;
 }
 
-/* Perustyyli ja typografia */
+/* Yleinen tyyli */
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    background-color: #fff; /* Change to white */
-    color: #000; /* Change to black */
-    line-height: 1.6;
-}
-
-/* Navigaatio */
-header {
-    background-color: #222;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #000;
     text-align: center;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+/* Hero-osio */
+.hero {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    color: #f1c40f; /* Kullanvärinen korostus */
-}
-
-/* Pääsisältö */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+.logo {
+    width: 150px;
     margin-bottom: 20px;
-    color: #f1c40f; /* Kullanvärinen otsikkoväri */
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
+.hero h1 {
+    font-size: 2.5rem;
+    color: #c7a349; /* Kullanvärinen */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Tuotteiden esittely */
+.products {
+    padding: 40px 20px;
+}
+
+.products h2 {
     font-size: 2rem;
-    margin: 20px 0;
-    color: #f1c40f;
+    color: #c7a349;
+    margin-bottom: 20px;
 }
 
-/* Kuvien käsittely */
-img {
-    max-width: 100%;
-    height: auto;
-    border: none;
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.main-image {
-    margin: 20px 0;
-}
-
-.team-image {
-    margin: 20px 0;
-}
-
-/* Tuote-esittely */
 .product-item {
-    margin-bottom: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 .product-item p {
     margin-top: 10px;
 }
 
-/* CTA-painikkeet */
-a.cta, button.cta {
-    background-color: #f1c40f;
-    color: #000;
-    padding: 10px 20px;
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+footer a {
+    color: #c7a349;
     text-decoration: none;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
 }
 
-a.cta:hover, button.cta:hover {
-    opacity: 0.8;
-}
-
-/* Yhteydenottolomake */
-.contact-form {
-    max-width: 500px;
-    margin:
+footer a:hover {
+    text-decoration: underline;
 }
