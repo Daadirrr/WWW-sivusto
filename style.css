@@ -55,7 +55,11 @@ body {
     padding: 60px 20px;
     text-align: center;
 }
-
+.hero .logo {
+    max-width: 120px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+}
 .hero h1 {
     font-size: 2rem;
     color: #c7a349;
