@@ -15,77 +15,51 @@ body {
 }
 
 /* Navigaatio */
-.navbar {
+.header {
+    background: #fff;
+    padding: 15px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
-    background: #222;
 }
 
-.navbar .logo {
-    font-size: 24px;
-    color: #c7a349;
-    text-decoration: none;
-    font-weight: bold;
+.header .logo img {
+    width: 150px;
 }
 
-.nav-links {
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.nav-links li a {
+.nav-menu li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-menu li a:hover {
     color: #c7a349;
 }
 
 /* Hero-osio */
 .hero {
     background-color: #f8f8f8;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero-logo {
-    width: 250px;
-    margin-bottom: 20px;
+    padding: 60px 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #c7a349;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.4rem;
-    margin-top: 10px;
+    font-size: 1.2rem;
     color: #555;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #c7a349;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background 0.3s;
-}
-
-.cta-button:hover {
-    background: #b08e3e;
 }
 
 /* Tuotteiden esittely */
@@ -95,9 +69,9 @@ body {
 }
 
 .products h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #c7a349;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
@@ -107,14 +81,13 @@ body {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .product-item {
     text-align: center;
     border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 8px;
     background: #f9f9f9;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -122,17 +95,11 @@ body {
 .product-item img {
     width: 100%;
     border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
 }
 
 .product-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.product-item img:hover {
-    transform: scale(1.1);
-    filter: brightness(90%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -140,11 +107,10 @@ footer {
     background-color: #222;
     color: #fff;
     padding: 20px;
-    margin-top: 40px;
     font-size: 1rem;
 }
 
-.footer-content {
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
