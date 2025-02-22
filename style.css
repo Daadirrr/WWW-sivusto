@@ -1,4 +1,4 @@
-/* Päivitetty style.css */
+/* Päivitetty style.css - Korjattu kuvien koko ja layout */
 
 /* Reset */
 * {
@@ -24,7 +24,7 @@ body {
 }
 
 .header .logo img {
-    width: 150px;
+    width: 120px;
 }
 
 .nav-menu {
@@ -36,7 +36,7 @@ body {
 .nav-menu li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -48,28 +48,28 @@ body {
 /* Hero-osio */
 .hero {
     background-color: #f8f8f8;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #c7a349;
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #555;
 }
 
 /* Tuotteiden esittely */
 .products {
-    padding: 50px 20px;
+    padding: 40px 20px;
     background: #fff;
 }
 
 .products h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #c7a349;
     margin-bottom: 20px;
     font-weight: bold;
@@ -77,16 +77,17 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .product-item {
     text-align: center;
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     background: #f9f9f9;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -94,32 +95,34 @@ body {
 
 .product-item img {
     width: 100%;
+    max-width: 250px;
+    height: auto;
     border-radius: 5px;
 }
 
 .product-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
     background-color: #222;
     color: #fff;
-    padding: 20px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 8px;
 }
 
 .social-icon {
     color: #c7a349;
-    font-size: 24px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
