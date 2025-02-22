@@ -1,3 +1,5 @@
+/* Päivitetty style.css */
+
 /* Reset */
 * {
     margin: 0;
@@ -6,64 +8,78 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
     color: #000;
     text-align: center;
 }
 
 /* Navigaatio */
+nav {
+    background: #222;
+    padding: 15px 0;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
-    padding: 20px;
-    background: #222;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #c7a349;
     font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #c7a349;
+    color: #fff;
 }
 
 /* Hero-osio */
 .hero {
     background-color: #f8f8f8;
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 
 .logo {
-    width: 200px;
+    width: 250px;
     margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #c7a349;
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 10px;
+    color: #555;
 }
 
 /* Tuotteiden esittely */
 .products {
-    padding: 40px 20px;
+    padding: 50px 20px;
+    background: #fff;
 }
 
 .products h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #c7a349;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .product-list {
@@ -78,10 +94,24 @@ nav ul li a:hover {
 .product-item {
     text-align: center;
     border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
     background: #f9f9f9;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .product-item img {
@@ -97,6 +127,18 @@ nav ul li a:hover {
 
 .product-item img:hover {
     transform: scale(1.1);
+    filter: brightness(90%);
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .product-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Footer */
@@ -105,11 +147,13 @@ footer {
     color: #fff;
     padding: 20px;
     margin-top: 40px;
+    font-size: 1rem;
 }
 
 footer a {
     color: #c7a349;
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer a:hover {
