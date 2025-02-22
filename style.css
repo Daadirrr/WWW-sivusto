@@ -10,49 +10,52 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fafafa;
-    color: #000;
+    color: #333;
     text-align: center;
 }
 
 /* Navigaatio */
-nav {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
     background: #222;
-    padding: 15px 0;
-    text-align: center;
 }
 
-nav ul {
+.navbar .logo {
+    font-size: 24px;
+    color: #c7a349;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
-    color: #c7a349;
+    color: #fff;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #fff;
+.nav-links li a:hover {
+    color: #c7a349;
 }
 
 /* Hero-osio */
 .hero {
     background-color: #f8f8f8;
     padding: 80px 20px;
+    text-align: center;
 }
 
-.logo {
+.hero-logo {
     width: 250px;
     margin-bottom: 20px;
 }
@@ -69,6 +72,22 @@ nav ul li a:hover {
     color: #555;
 }
 
+.cta-button {
+    display: inline-block;
+    background: #c7a349;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #b08e3e;
+}
+
 /* Tuotteiden esittely */
 .products {
     padding: 50px 20px;
@@ -82,7 +101,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.product-list {
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
@@ -98,20 +117,6 @@ nav ul li a:hover {
     border-radius: 10px;
     background: #f9f9f9;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .product-item img {
@@ -130,17 +135,6 @@ nav ul li a:hover {
     filter: brightness(90%);
 }
 
-/* Responsiivisuus */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .product-list {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Footer */
 footer {
     background-color: #222;
@@ -150,12 +144,19 @@ footer {
     font-size: 1rem;
 }
 
-footer a {
-    color: #c7a349;
-    text-decoration: none;
-    font-weight: bold;
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.social-icon {
+    color: #c7a349;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #fff;
 }
