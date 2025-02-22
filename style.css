@@ -61,7 +61,6 @@ body {
     display: block;
 }
 .hero {
-    background-image: url('E52FD83F-E326-4B62-ABF0-84515CAC7AAB.PNG'); /* Path to your image */
     background-size: cover; /* Adjust to cover the entire section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
