@@ -1,4 +1,4 @@
-/* Palautettu aiempi moderni tyyli */
+/* Päivitetty style.css - Korjattu logon koko ja sijoittelu */
 
 /* Reset */
 * {
@@ -15,141 +15,121 @@ body {
 }
 
 /* Navigaatio */
-.navbar {
+.header {
+    background: #fff;
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
-    background: #222;
+    position: relative;
 }
 
-.navbar .logo {
-    font-size: 24px;
-    color: #c7a349;
-    text-decoration: none;
-    font-weight: bold;
+.header .logo {
+    width: 100px; /* Pienennetty logo yläkulmaan */
+    position: absolute;
+    top: 10px;
+    left: 20px;
 }
 
-.nav-links {
+.nav-menu {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin-left: auto;
 }
 
-.nav-links li a {
+.nav-menu li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+    color: #000;
+    font-size: 16px;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.nav-menu li a:hover {
     color: #c7a349;
 }
 
 /* Hero-osio */
 .hero {
-    background-color: #f8f8f8;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero-logo {
-    width: 250px;
-    margin-bottom: 20px;
+    background: url('E52FD83F-E326-4B62-ABF0-84515CAC7AAB.PNG') no-repeat center center;
+    background-size: contain; /* Logo taustaksi */
+    padding: 100px 20px;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #c7a349;
     font-weight: bold;
+    margin-top: 100px;
 }
 
 .hero p {
-    font-size: 1.4rem;
-    margin-top: 10px;
+    font-size: 1rem;
     color: #555;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #c7a349;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background 0.3s;
-}
-
-.cta-button:hover {
-    background: #b08e3e;
 }
 
 /* Tuotteiden esittely */
 .products {
-    padding: 50px 20px;
+    padding: 40px 20px;
     background: #fff;
 }
 
 .products h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #c7a349;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .product-item {
     text-align: center;
     border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 8px;
     background: #f9f9f9;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .product-item img {
     width: 100%;
-    border-radius: 5px;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
+    border-radius: 5px;
 }
 
 .product-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
     background-color: #222;
     color: #fff;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
-.footer-content {
+.social-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 8px;
 }
 
 .social-icon {
     color: #c7a349;
-    font-size: 24px;
+    font-size: 20px;
     transition: color 0.3s;
 }
 
