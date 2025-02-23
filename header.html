@@ -1,7 +1,10 @@
 <div class="w3-top">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
         <a href="index.html" class="w3-bar-item w3-button"><b>AWAALES</b></a>
-        <div class="w3-right w3-hide-small">
+        <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">
+            ☰
+        </a>
+        <div id="navMenu" class="w3-right w3-hide-small w3-hide">
             <a href="index.html" class="w3-bar-item w3-button">Etusivu</a>
             <a href="products.html" class="w3-bar-item w3-button">Tuotteet</a>
             <a href="about.html" class="w3-bar-item w3-button">Tietoa Meistä</a>
@@ -9,3 +12,16 @@
         </div>
     </div>
 </div>
+
+<script>
+    function toggleMenu() {
+        var x = document.getElementById("navMenu");
+        if (x.classList.contains("w3-hide")) {
+            x.classList.remove("w3-hide");
+            x.classList.add("w3-show");
+        } else {
+            x.classList.remove("w3-show");
+            x.classList.add("w3-hide");
+        }
+    }
+</script>
