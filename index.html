@@ -9,28 +9,83 @@
 </head>
 <body>
 
-<div id="header"></div>
-<script>
-    fetch("header.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("header").innerHTML = data);
-</script>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>AWAALES</b></a>
+        <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button">Etusivu</a>
+            <a href="products.html" class="w3-bar-item w3-button">Tuotteet</a>
+            <a href="about.html" class="w3-bar-item w3-button">Tietoa Meistä</a>
+            <a href="blog.html" class="w3-bar-item w3-button">Blogi</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Yhteystiedot</a>
+        </div>
+    </div>
+</div>
 
 <!-- Hero-osio -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <img class="w3-image" src="E52FD83F-E326-4B62-ABF0-84515CAC7AAB.PNG" alt="AWAALES logo" width="1500" height="800">
-    <div class="w3-display-middle w3-margin-top w3-center">
+    <div class="w3-display-bottommiddle w3-margin-top w3-center">
         <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>AWAALES</b></span> <span class="w3-hide-small w3-text-light-grey">Tulossa pian</span></h1>
-        <p class="w3-large">Laadukkaat thobet modernilla twistillä – pysy kuulolla!</p>
+        <p class="w3-large w3-text-white">Laadukkaat thobet modernilla twistillä – pysy kuulolla!</p>
     </div>
 </header>
 
-<div id="footer"></div>
-<script>
-    fetch("footer.html")
-        .then(response => response.text())
-        .then(data => document.getElementById("footer").innerHTML = data);
-</script>
+<!-- Tuotteet -->
+<div class="w3-content w3-padding" style="max-width:1564px" id="products">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mallistosamme</h3>
+    <div class="w3-row-padding">
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1153.JPG" alt="Burgundy Thobe" style="width:100%">
+            <h3>Burgundy Thobe</h3>
+            <p>Ylellinen burgundinpunainen Thobe eleganttiin juhlapukeutumiseen.</p>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1155.JPG" alt="Silver Grey Thobe" style="width:100%">
+            <h3>Silver Grey Thobe</h3>
+            <p>Hillitty ja moderni harmaa Thobe minimalistisella muotoilulla.</p>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1156.JPG" alt="Desert Beige Thobe" style="width:100%">
+            <h3>Desert Beige Thobe</h3>
+            <p>Ajaton beige Thobe, jossa kultaiset yksityiskohdat.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tietoa Meistä -->
+<div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tietoa Meistä</h3>
+    <p>AWAALES on syntynyt rakkaudesta perinteisiin arabialaisiin vaatteisiin ja moderniin muotiin...</p>
+</div>
+
+<!-- Blogi -->
+<div class="w3-container w3-padding-32" id="blog">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Blogi</h3>
+    <div class="w3-row-padding">
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <img src="images/blog1.jpg" alt="Thoben valinta" style="width:100%">
+            <h3>Miten valita oikea thobe eri tilaisuuksiin?</h3>
+            <p>Valitse thobe, joka sopii tilaisuuteen, jossa aiot sitä käyttää.</p>
+        </div>
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <img src="images/blog2.jpg" alt="Thoben historia" style="width:100%">
+            <h3>Thoben historia ja kulttuurinen merkitys</h3>
+            <p>Thobe on enemmän kuin vaate – se on kulttuuriperinteen symboli.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <p>Seuraa meitä:</p>
+    <a href="https://instagram.com" class="w3-button w3-light-grey">Instagram</a>
+    <a href="https://facebook.com" class="w3-button w3-light-grey">Facebook</a>
+    <a href="https://twitter.com" class="w3-button w3-light-grey">Twitter</a>
+    <p>&copy; 2025 AWAALES</p>
+</footer>
 
 </body>
 </html>
+
