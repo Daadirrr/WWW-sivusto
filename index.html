@@ -4,58 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWAALES - Tulossa pian</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Hero-osio -->
-    <header class="hero">
-        <img src="E52FD83F-E326-4B62-ABF0-84515CAC7AAB.PNG" alt="AWAALES logo" class="logo">
-        <h1>Tulossa pian</h1>
-        <p>Laadukkaat thobet modernilla twistillä – pysy kuulolla!</p>
-    </header>
-
-    <!-- Navigaatio -->
-    <nav class="navbar">
-    <ul class="nav-menu">
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="products.html">Tuotteet</a></li>
-        <li><a href="about.html">Tietoa Meistä</a></li>
-        <li><a href="blog.html">Blogi</a></li>
-        <li><a href="contact.html">Yhteystiedot</a></li>
-    </ul>
-</nav>
-
-    <!-- Tuote-esittely -->
-    <section class="products">
-        <h2>Mallistomme</h2>
-        <div class="product-list">
-            <div class="product-item">
-                <img src="IMG_1153.JPG" alt="Burgundy Thobe">
-                <h3>Burgundy Thobe</h3>
-                <p>Ylellinen burgundinpunainen Thobe eleganttiin juhlapukeutumiseen.</p>
-            </div>
-            <div class="product-item">
-                <img src="IMG_1155.JPG" alt="Silver Grey Thobe">
-                <h3>Silver Grey Thobe</h3>
-                <p>Hillitty ja moderni harmaa Thobe minimalistisella muotoilulla.</p>
-            </div>
-            <div class="product-item">
-                <img src="IMG_1156.JPG" alt="Desert Beige Thobe">
-                <h3>Desert Beige Thobe</h3>
-                <p>Ajaton beige Thobe, jossa kultaiset yksityiskohdat.</p>
-            </div>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>AWAALES</b></a>
+        <div class="w3-right w3-hide-small">
+            <a href="index.html" class="w3-bar-item w3-button">Etusivu</a>
+            <a href="products.html" class="w3-bar-item w3-button">Tuotteet</a>
+            <a href="about.html" class="w3-bar-item w3-button">Tietoa Meistä</a>
+            <a href="blog.html" class="w3-bar-item w3-button">Blogi</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Yhteystiedot</a>
         </div>
-    </section>
+    </div>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <p>Seuraa meitä:</p>
-        <a href="https://instagram.com">Instagram</a> |
-        <a href="https://facebook.com">Facebook</a> |
-        <a href="https://twitter.com">Twitter</a>
-        <p>&copy; 2025 AWAALES</p>
-    </footer>
+<!-- Hero-osio -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="E52FD83F-E326-4B62-ABF0-84515CAC7AAB.PNG" alt="AWAALES logo" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>AWAALES</b></span> <span class="w3-hide-small w3-text-light-grey">Tulossa pian</span></h1>
+        <p class="w3-large">Laadukkaat thobet modernilla twistillä – pysy kuulolla!</p>
+    </div>
+</header>
+
+<!-- Tuote-esittely -->
+<section class="w3-content w3-padding" style="max-width:1564px" id="products">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Mallistomme</h3>
+    <div class="w3-row-padding">
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1153.JPG" alt="Burgundy Thobe" style="width:100%">
+            <h3>Burgundy Thobe</h3>
+            <p>Ylellinen burgundinpunainen Thobe eleganttiin juhlapukeutumiseen.</p>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1155.JPG" alt="Silver Grey Thobe" style="width:100%">
+            <h3>Silver Grey Thobe</h3>
+            <p>Hillitty ja moderni harmaa Thobe minimalistisella muotoilulla.</p>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1156.JPG" alt="Desert Beige Thobe" style="width:100%">
+            <h3>Desert Beige Thobe</h3>
+            <p>Ajaton beige Thobe, jossa kultaiset yksityiskohdat.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Yhteystiedot -->
+<div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Ota yhteyttä</h3>
+    <form>
+        <input class="w3-input w3-border" type="text" placeholder="Nimi" required>
+        <input class="w3-input w3-section w3-border" type="email" placeholder="Sähköposti" required>
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Aihe" required>
+        <textarea class="w3-input w3-section w3-border" placeholder="Viesti" required></textarea>
+        <button class="w3-button w3-black w3-section">Lähetä</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+    <p>Seuraa meitä:</p>
+    <a href="https://instagram.com" class="w3-button w3-light-grey">Instagram</a>
+    <a href="https://facebook.com" class="w3-button w3-light-grey">Facebook</a>
+    <a href="https://twitter.com" class="w3-button w3-light-grey">Twitter</a>
+    <p>&copy; 2025 AWAALES</p>
+</footer>
 
 </body>
 </html>
