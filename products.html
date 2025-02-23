@@ -4,47 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuotteet - AWAALES</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigaatio -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="products.html">Tuotteet</a></li>
-            <li><a href="about.html">Tietoa Meistä</a></li>
-            <li><a href="blog.html">Blogi</a></li>
-            <li><a href="contact.html">Yhteystiedot</a></li>
-        </ul>
-    </nav>
+<div id="header"></div>
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+</script>
 
-    <!-- Tuote-esittely -->
-    <section class="products">
-        <h1>Premium Thobet</h1>
-        <div class="product-list">
-            <div class="product-item">
-                <img src="IMG_1153.JPG" alt="Burgundy Thobe">
-                <h3>Burgundy Thobe</h3>
-                <p>Elegantti burgundinpunainen Thobe juhlapukeutumiseen.</p>
-            </div>
-            <div class="product-item">
-                <img src="IMG_1155.JPG" alt="Silver Grey Thobe">
-                <h3>Silver Grey Thobe</h3>
-                <p>Moderni harmaa Thobe minimalistisella muotoilulla.</p>
-            </div>
-            <div class="product-item">
-                <img src="IMG_1156.JPG" alt="Desert Beige Thobe">
-                <h3>Desert Beige Thobe</h3>
-                <p>Beige Thobe, jossa kultaiset yksityiskohdat ja pehmeä rakenne.</p>
-            </div>
+<!-- Tuote-esittely -->
+<section class="w3-content w3-padding" style="max-width:1564px" id="products">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Premium Thobet</h3>
+    <div class="w3-row-padding">
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1153.JPG" alt="Burgundy Thobe" style="width:100%">
+            <h3>Burgundy Thobe</h3>
+            <p>Elegantti burgundinpunainen Thobe juhlapukeutumiseen.</p>
         </div>
-    </section>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1155.JPG" alt="Silver Grey Thobe" style="width:100%">
+            <h3>Silver Grey Thobe</h3>
+            <p>Moderni harmaa Thobe minimalistisella muotoilulla.</p>
+        </div>
+        <div class="w3-col l4 m6 w3-margin-bottom">
+            <img src="IMG_1156.JPG" alt="Desert Beige Thobe" style="width:100%">
+            <h3>Desert Beige Thobe</h3>
+            <p>Beige Thobe, jossa kultaiset yksityiskohdat ja pehmeä rakenne.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 AWAALES. Kaikki oikeudet pidätetään.</p>
-    </footer>
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 
 </body>
 </html>
