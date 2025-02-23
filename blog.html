@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogi - AWAALES</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogi - AWAALES</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigaatio -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="products.html">Tuotteet</a></li>
-        <li><a href="about.html">Tietoa Meistä</a></li>
-        <li><a href="blog.html">Blogi</a></li>
-        <li><a href="contact.html">Yhteystiedot</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Blogisisältö -->
-  <main>
-    <section id="blog">
-      <h1>Blogi</h1>
-      <article class="blog-post">
-        <h2>Miten valita oikea thobe eri tilaisuuksiin?</h2>
-        <img src="images/blog1.jpg" alt="Thoben valinta">
-        <p>Valitse thobe, joka sopii tilaisuuteen, jossa aiot sitä käyttää. AWAALESin valikoimasta löydät vaihtoehtoja sekä juhla- että arkipukeutumiseen.</p>
-      </article>
-      <article class="blog-post">
-        <h2>Thoben historia ja kulttuurinen merkitys</h2>
-        <img src="images/blog2.jpg" alt="Thoben historia">
-        <p>Thobe on enemmän kuin vaate – se on kulttuuriperinteen symboli. Lue lisää thoben historiasta ja sen merkityksestä nykyaikana.</p>
-      </article>
-    </section>
-  </main>
+<div id="header"></div>
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+</script>
 
-  <!-- Sivun alareuna -->
-  <footer>
-    <p>&copy; 2025 AWAALES. Kaikki oikeudet pidätetään.</p>
-  </footer>
+<!-- Blogisisältö -->
+<main class="w3-content w3-padding" style="max-width:1564px" id="blog">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Blogi</h3>
+    <div class="w3-row-padding">
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <img src="images/blog1.jpg" alt="Thoben valinta" style="width:100%">
+            <h3>Miten valita oikea thobe eri tilaisuuksiin?</h3>
+            <p>Valitse thobe, joka sopii tilaisuuteen, jossa aiot sitä käyttää. AWAALESin valikoimasta löydät vaihtoehtoja sekä juhla- että arkipukeutumiseen.</p>
+        </div>
+        <div class="w3-col l6 m6 w3-margin-bottom">
+            <img src="images/blog2.jpg" alt="Thoben historia" style="width:100%">
+            <h3>Thoben historia ja kulttuurinen merkitys</h3>
+            <p>Thobe on enemmän kuin vaate – se on kulttuuriperinteen symboli. Lue lisää thoben historiasta ja sen merkityksestä nykyaikana.</p>
+        </div>
+    </div>
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
 </body>
 </html>
