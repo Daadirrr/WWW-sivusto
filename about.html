@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tietoa Meistä - AWAALES</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietoa Meistä - AWAALES</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigaatio -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="products.html">Tuotteet</a></li>
-        <li><a href="about.html">Tietoa Meistä</a></li>
-        <li><a href="blog.html">Blogi</a></li>
-        <li><a href="contact.html">Yhteystiedot</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Tietoa Meistä -sisältö -->
-  <main>
-    <section id="about">
-      <h1>Tietoa Meistä</h1>
-      <p>AWAALES on syntynyt rakkaudesta perinteisiin arabialaisiin vaatteisiin ja moderniin muotiin. Tavoitteenamme on yhdistää perinteet ja nykyaikainen tyylikkyys. Kaikki thobet valmistetaan huolellisesti valituista materiaaleista, mikä takaa sekä mukavuuden että luksuksen.</p>
-      <!-- Tiimikuvia varten käytetty kuva -->
-      <img src="images/team.jpg" alt="Tiimi työssä" class="team-image">
-      <p>Tutustu tiimiimme, joka valmistaa jokaisen thoben käsityönä huolella ja rakkaudella.</p>
-    </section>
-  </main>
+<div id="header"></div>
+<script>
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+</script>
 
-  <!-- Sivun alareuna -->
-  <footer>
-    <p>&copy; 2025 AWAALES. Kaikki oikeudet pidätetään.</p>
-  </footer>
+<!-- Tietoa Meistä -sisältö -->
+<main class="w3-content w3-padding" style="max-width:1564px" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Tietoa Meistä</h3>
+    <p>AWAALES on syntynyt rakkaudesta perinteisiin arabialaisiin vaatteisiin ja moderniin muotiin. Tavoitteenamme on yhdistää perinteet ja nykyaikainen tyylikkyys. Kaikki thobet valmistetaan huolellisesti valituista materiaaleista, mikä takaa sekä mukavuuden että luksuksen.</p>
+    <img src="images/team.jpg" alt="Tiimi työssä" class="w3-image" style="width:100%">
+    <p>Tutustu tiimiimme, joka valmistaa jokaisen thoben käsityönä huolella ja rakkaudella.</p>
+</main>
+
+<div id="footer"></div>
+<script>
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
 </body>
 </html>
