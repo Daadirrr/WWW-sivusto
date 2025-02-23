@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuotteet - AWAALES</title>
+    <title>Yhteystiedot - AWAALES</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,27 +16,29 @@
         .then(data => document.getElementById("header").innerHTML = data);
 </script>
 
-<!-- Tuote-esittely -->
-<section class="w3-content w3-padding" style="max-width:1564px" id="products">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Premium Thobet</h3>
-    <div class="w3-row-padding">
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <img src="IMG_1153.JPG" alt="Burgundy Thobe" style="width:100%">
-            <h3>Burgundy Thobe</h3>
-            <p>Elegantti burgundinpunainen Thobe juhlapukeutumiseen.</p>
-        </div>
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <img src="IMG_1155.JPG" alt="Silver Grey Thobe" style="width:100%">
-            <h3>Silver Grey Thobe</h3>
-            <p>Moderni harmaa Thobe minimalistisella muotoilulla.</p>
-        </div>
-        <div class="w3-col l4 m6 w3-margin-bottom">
-            <img src="IMG_1156.JPG" alt="Desert Beige Thobe" style="width:100%">
-            <h3>Desert Beige Thobe</h3>
-            <p>Beige Thobe, jossa kultaiset yksityiskohdat ja pehmeä rakenne.</p>
-        </div>
+<!-- Yhteystietojen sisältö -->
+<main class="w3-content w3-padding" style="max-width:1564px" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Ota yhteyttä</h3>
+    <p>Jos sinulla on kysyttävää tai haluat tehdä tilauksen, ota rohkeasti yhteyttä!</p>
+    <form action="#" method="post" class="w3-container w3-padding-16">
+        <label for="name">Nimi:</label>
+        <input class="w3-input w3-border" type="text" id="name" name="name" required>
+
+        <label for="email">Sähköposti:</label>
+        <input class="w3-input w3-border" type="email" id="email" name="email" required>
+
+        <label for="message">Viesti:</label>
+        <textarea class="w3-input w3-border" id="message" name="message" rows="5" required></textarea>
+
+        <button class="w3-button w3-black w3-section" type="submit">Lähetä viesti</button>
+    </form>
+    <div class="w3-padding-16">
+        <p>Seuraa meitä:</p>
+        <a href="https://instagram.com" class="w3-button w3-light-grey">Instagram</a>
+        <a href="https://facebook.com" class="w3-button w3-light-grey">Facebook</a>
+        <a href="https://twitter.com" class="w3-button w3-light-grey">Twitter</a>
     </div>
-</section>
+</main>
 
 <div id="footer"></div>
 <script>
