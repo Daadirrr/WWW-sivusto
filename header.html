@@ -1,80 +1,27 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        /* Ensure menu is full-width on mobile */
-        #navMenu {
-            display: none; /* Hide by default */
-            width: 100%;
-            position: absolute;
-            top: 50px; /* Adjust based on navbar height */
-            left: 0;
-            background-color: white;
-            z-index: 1000;
-        }
-
-        #navMenu a {
-            display: block; /* Stack items vertically */
-            text-align: center;
-            padding: 12px;
-            border-bottom: 1px solid #ddd; /* Add separation */
-        }
-
-        .w3-bar .menu-icon {
-            font-size: 24px;
-        }
-
-        @media (min-width: 993px) {
-            #navMenu {
-                display: block !important; /* Ensure it's visible on larger screens */
-                position: relative;
-                top: auto;
-                left: auto;
-                width: auto;
-                background: none;
-            }
-            #navMenu a {
-                display: inline-block;
-                border: none;
-            }
-        }
-    </style>
-</head>
-<body>
-
 <div class="w3-top">
-    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="index.html" class="w3-bar-item w3-button"><b>AWAALES</b></a>
-        <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium menu-icon" onclick="toggleMenu()">
-            ☰
-        </a>
-        <div id="navMenu" class="w3-right w3-hide-large w3-hide-medium">
-            <a href="index.html" class="w3-bar-item w3-button" onclick="closeMenu()">Etusivu</a>
-            <a href="products.html" class="w3-bar-item w3-button" onclick="closeMenu()">Tuotteet</a>
-            <a href="about.html" class="w3-bar-item w3-button" onclick="closeMenu()">Tietoa Meistä</a>
-            <a href="contact.html" class="w3-bar-item w3-button" onclick="closeMenu()">Yhteystiedot</a>
-        </div>
-    </div>
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button"><b>AWAALES</b></a>
+        <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">
+            ☰
+        </a>
+        <div id="navMenu" class="w3-right w3-hide-small w3-hide">
+            <a href="index.html" class="w3-bar-item w3-button">Etusivu</a>
+            <a href="products.html" class="w3-bar-item w3-button">Tuotteet</a>
+            <a href="about.html" class="w3-bar-item w3-button">Tietoa Meistä</a>
+            <a href="contact.html" class="w3-bar-item w3-button">Yhteystiedot</a>
+        </div>
+    </div>
 </div>
 
 <script>
-    function toggleMenu() {
-        var x = document.getElementById("navMenu");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-
-    function closeMenu() {
-        if (window.innerWidth < 993) {
-            document.getElementById("navMenu").style.display = "none";
-        }
-    }
+    function toggleMenu() {
+        var x = document.getElementById("navMenu");
+        if (x.classList.contains("w3-hide")) {
+            x.classList.remove("w3-hide");
+            x.classList.add("w3-show");
+        } else {
+            x.classList.remove("w3-show");
+            x.classList.add("w3-hide");
+        }
+    }
 </script>
-
-</body>
-</html>
